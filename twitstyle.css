@@ -10,8 +10,8 @@ body {
 
 .container {
     display: grid;
-    grid-template-areas: "nav main sideBar";
-    grid-template-columns: minmax(225px, 300px) minmax(min-content, 2fr) minmax(350px, 1fr);
+    grid-template-areas: "nav main main sidebar";
+    /* grid-template-columns: minmax(225px, 300px) minmax(min-content, 2fr) minmax(350px, 1fr); */
   }
 
 .container .toplogo img {
@@ -30,7 +30,7 @@ ul .iconleft {
 }
 
 .nav {
-    grid-area: "nav";
+    grid-area: nav;
     color: #ffffff;
     overflow: none;
 }
@@ -199,7 +199,7 @@ ul .iconleft {
   }
 
 .main {
-    grid-area: "main";
+    grid-area: main;
     max-height: 100vh;
     overflow-x: none;
     overflow-y: scroll;
@@ -210,7 +210,8 @@ ul .iconleft {
 }
 
 .sidebar {
-    grid-area: "sidebar";
+    grid-area: sidebar;
+    background-color: rgb(52, 47, 47);
 }
   
   .searchBar, .news, .mustfollow {
