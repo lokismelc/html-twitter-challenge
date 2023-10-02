@@ -1,0 +1,234 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    background: rgb(71, 67, 67);
+    height: 100dvh;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "nav main sideBar";
+    grid-template-columns: minmax(225px, 300px) minmax(min-content, 2fr) minmax(350px, 1fr);
+  }
+
+.container .toplogo img {
+    margin: 10px;
+    padding-left: 10px;
+}
+
+ul .iconleft {
+    width: 25px;
+    height: 25px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav {
+    grid-area: "nav";
+    color: #ffffff;
+    overflow: none;
+}
+
+.nav, .sidebar {
+    background-color: rgba(55, 49, 49, 0.3);
+    padding: 15px;
+  }
+
+  .nav ul {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .nav ul li {
+    padding: 10px;
+    margin:  0.5em 0;
+    list-style-type: none;
+  }
+
+.logoleft {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;  
+    padding-top: 20px;
+}
+
+.profileimg .roundimg {
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.nav ul li img + span {
+    margin-left: 10px;
+  }
+
+.nav ul li:hover, #active {
+    background-color: rgb(244, 39, 148);
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+  }
+
+.posting {
+    background-color: rgb(51, 47, 47);
+    height: min-content;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 1fr 40px;
+    padding: 20px;
+    gap: 20px;
+  }
+
+.textBox {
+    background-color: rgb(34, 0, 255);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(98, 27, 85, 0.1);
+}
+
+.textBox > p {
+    margin: 0;
+  }
+
+  .posting .button {
+    background-color: lightskyblue;
+    width: 50px;
+    height: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 36%;
+}
+
+.button:hover {
+    background-color: rgb(244, 39, 148);
+    color: rgba(255, 255, 255, 1);
+  }
+
+.posting .options {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr min-content;
+  }
+
+
+.tweet .options {
+    font-size: small;
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(45px, 1fr));
+  }
+
+  .tweet .options img {
+    height: 20px;
+  }
+
+  .options .mediaPost {
+    display: grid;
+    grid-template-columns: repeat(6, min-content);
+    grid-gap: 30px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .mediaPost img {
+    height: 30px;
+    border-radius: 100%;
+    padding: 10%;
+    margin: 10px 10px;
+  }
+
+  .mediaPost img:hover {
+    background-color: rgb(244, 39, 148);
+  }
+
+
+  .tweet {
+    background-color: rgb(45, 45, 45);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 50px 1fr;
+    box-shadow: 5px 5px 10px rgba(98, 27, 85, 0.1);
+  }
+
+.mediashare {
+    align-items: center;
+    margin-top: 15px;
+}
+
+  .tweet:hover {
+    cursor: pointer;
+  
+    background-color: rgb(37, 37, 37);
+  }
+
+  .profileName + .tagNameFeed, .tagNameFeed + .timeAgo {
+    margin-left: 20px;
+  }
+
+  .tweet .timeAgo {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.286);
+    font-size: 20px;
+  }
+
+.tweet .tagNameFeed {
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.286);
+    font-size: 20px;
+  }
+
+  .tweet .textFeed {
+    font-size: 20px;
+    margin-top: 1em;
+    line-height: 150%;
+  }
+
+  .tag:hover, .hastagTag:hover, .tagNameFeed:hover {
+    color: rgb(132, 30, 69);
+  }
+
+.main {
+    grid-area: "main";
+    max-height: 100vh;
+    overflow-x: none;
+    overflow-y: scroll;
+}
+
+.main::-webkit-scrollbar { 
+    display: none; 
+}
+
+.sidebar {
+    grid-area: "sidebar";
+}
+  
+  .searchBar, .news, .mustfollow {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.226);
+    overflow: hidden;
+  }
+
+svg {
+    padding: 20px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.iconleft {
+    display: inline;
+}
